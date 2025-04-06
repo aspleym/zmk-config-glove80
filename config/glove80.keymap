@@ -30,7 +30,7 @@
 #define SYMBOL 4
 #define SPECIAL 5
 
-#define FREE6 6
+#define EXP 6
 #define FREE7 7
 
 // FACTORY
@@ -135,6 +135,105 @@ ZMK_HOLD_TAP(
     bindings = <&mo>, <&ld>;
 )
 
+//
+// PROGRAMMING ROW
+//
+
+ZMK_MOD_MORPH(
+    dgrave,
+    bindings = <&kp DLLR>, <&kp GRAVE>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    apipe,
+    bindings = <&kp AMPS>, <&kp PIPE>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    starslh,
+    bindings = <&kp STAR>, <&kp BSLH>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    pu11,
+    bindings = <&kp PG_UP>, <&kp F11>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    pd12,
+    bindings = <&kp PG_DN>, <&kp F12>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+//
+// NUM FUN MORPH
+//
+ZMK_MOD_MORPH(
+    nf1,
+    bindings = <&kp N1>, <&kp F1>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    nf2,
+    bindings = <&kp N2>, <&kp F2>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    nf3,
+    bindings = <&kp N3>, <&kp F3>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    nf4,
+    bindings = <&kp N4>, <&kp F4>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    nf5,
+    bindings = <&kp N5>, <&kp F5>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    nf6,
+    bindings = <&kp N6>, <&kp F6>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    nf7,
+    bindings = <&kp N7>, <&kp F7>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    nf8,
+    bindings = <&kp N8>, <&kp F8>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    nf9,
+    bindings = <&kp N9>, <&kp F9>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MOD_MORPH(
+    nf0,
+    bindings = <&kp N0>, <&kp F10>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+
+
 / {
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro_0 {
@@ -183,11 +282,11 @@ ZMK_HOLD_TAP(
         default_layer {
             bindings = <
             &kp F1            &kp F2            &kp F3            &kp F4            &kp F5                                                                                                                                    &kp F6            &kp F7            &kp F8            &kp F9            &kp F10
-            &kp EUQAL         &kp N1            &kp N2            &kp N3            &kp N4            &kp N5                                                                                                &kp N6            &kp N7            &kp N8            &kp N9            &kp N0            &kp BSLH
-            &kp TAB           &kp Q             &kp W             &kp F             &kp P             &kp B                                                                                                 &kp J             &kp L             &kp U             &kp Y             &kp SEMI          &kp MINUS
-            &kp ESC           &hml LGUI A       &hml LALT R       &hml LCTRL S      &hml LSHFT T      &kp G                                                                                                 &kp M             &hmr RSHFT N      &hmr RCTRL E      &hmr LALT I       &hmr RGUI O       &kp SQT
-            &kp GRAVE         &kp Z             &kp X             &kp C             &kp D             &kp V         &lt SYMBOL ESC  &kp LALT    &l_mod SPECIAL 0    &kp LGUI    &kp RCTRL   &kp TAB         &kp K             &kp H             &kp COMMA         &kp DOT           &kp FSLH          &kp F11
-            &magic MAGIC 0    &kp HOME          &kp END           &kp LBKT          &kp RBKT                            &bs_del     &kp LCTRL   &smart_shft         &kp RALT    &kp RET     &kp SPACE                         &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &kp F12
+            &kp F11           &kp N1            &kp N2            &kp N3            &kp N4            &kp N5                                                                                                &kp N6            &kp N7            &kp N8            &kp N9            &kp N0            &kp F12
+            &kp MINUS         &kp Q             &kp W             &kp F             &kp P             &kp B                                                                                                 &kp J             &kp L             &kp U             &kp Y             &kp SEMI          &kp BSLH
+            &kp EQUAL         &hml LGUI A       &hml LALT R       &hml LCTRL S      &hml LSHFT T      &kp G                                                                                                 &kp M             &hmr RSHFT N      &hmr RCTRL E      &hmr LALT I       &hmr RGUI O       &kp SQT
+            &kp GRAVE         &kp Z             &kp X             &kp C             &kp D             &kp V             &kp LCTRL  &kp LALT    &l_mod SPECIAL 0     &kp LGUI    &kp RCTRL   &kp TAB         &kp K             &kp H             &kp COMMA         &kp DOT           &kp FSLH          &kp PG_UP
+            &magic MAGIC 0    &kp HOME          &kp END           &kp LBKT          &kp RBKT                            &bs_del  &lt SYMBOL ESC &smart_shft         &kp RALT    &kp RET     &kp SPACE                         &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &kp PG_DN
             >;
         };
 
@@ -221,7 +320,7 @@ ZMK_HOLD_TAP(
             &kp M             &kp N6            &kp N7            &kp N8            &kp N9            &kp N0                                                                                                &kp F6            &kp F7            &kp F8            &kp F9            &kp F10           &kp F11 
             &kp I             &kp N1            &kp N2            &kp N3            &kp N4            &kp N5                                                                                                &kp Y             &kp U             &kp I             &kp O             &kp P             &kp F12  
             &kp T             &kp TAB           &kp Q             &kp W             &kp E             &kp R                                                                                                 &kp H             &kp J             &kp K             &kp L             &kp SEMI          &kp SQT 
-            &kp G             &kp LSHFT         &kp A             &kp S             &kp D             &kp F             xxx         xxx     &to DEFAULT             xxx         xxx         &kp TAB         &kp N             &kp M             &kp COMMA         &kp DOT           &kp FSLH          &kp BSLH 
+            &kp G             &kp LSHFT         &kp A             &kp S             &kp D             &kp F             xxx         xxx     &to EXP                 xxx         xxx         &kp TAB         &kp N             &kp M             &kp COMMA         &kp DOT           &kp FSLH          &kp BSLH 
             ___               &kp LCTRL         &kp Z             &kp X             &kp C                               &bs_del     xxx         xxx                 xxx         &kp RET     &kp SPACE                         &kp MINUS         &kp LBKT          &kp RBKT          &kp EQUAL         &kp GRAVE
             >;
         };
@@ -250,15 +349,16 @@ ZMK_HOLD_TAP(
             >;
         };
 
-        free6_layer {
+        exp_layer {
             bindings = <
-            ___               ___               ___               ___               ___                                                                                                                                       ___               ___               ___               ___               ___                    
-            ___               ___               ___               ___               ___               ___                                                                                                   ___               ___               ___               ___               ___               ___ 
-            ___               ___               ___               ___               ___               ___                                                                                                   ___               ___               ___               ___               ___               ___  
-            ___               ___               ___               ___               ___               ___                                                                                                   ___               ___               ___               ___               ___               ___ 
-            ___               ___               ___               ___               ___               ___               ___         ___         ___                 ___         ___         ___             ___               ___               ___               ___               ___               ___ 
-            ___               ___               ___               ___               ___                                 ___         ___         ___                 ___         ___         ___                               ___               ___               ___               ___               ___               
+            &nf1              &nf2              &nf3              &nf4              &nf5                                                                                                                                      &nf6              &nf7              &nf8              &nf9              &nf0  
+            &dgrave           &kp PLUS          &kp LBKT          &kp LBRC          &kp LPAR          &apipe                                                                                                &kp EQUAL         &kp RPAR          &kp RBRC          &kp RBKT          &starslh          &kp EXCL
+            &kp TAB           &kp Q             &kp W             &kp F             &kp P             &kp B                                                                                                 &kp J             &kp L             &kp U             &kp Y             &kp SEMI          &kp MINUS
+            &kp ESC           &hml LGUI A       &hml LALT R       &hml LCTRL S      &hml LSHFT T      &kp G                                                                                                 &kp M             &hmr RSHFT N      &hmr RCTRL E      &hmr LALT I       &hmr RGUI O       &kp SQT
+            &kp GRAVE         &kp Z             &kp X             &kp C             &kp D             &kp V             &smart_shft &kp LCTRL   &to DEFAULT         &kp LGUI    &kp RCTRL   &kp TAB         &kp K             &kp H             &kp COMMA         &kp DOT           &kp FSLH          &pu11
+            &magic MAGIC 0    &kp HOME          &kp END           &kp LBKT          &kp RBKT                            &bs_del  &lt SYMBOL ESC &kp LALT            &kp RALT    &kp RET     &kp SPACE                         &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &pd12
             >;
+
         };
 
         free7_layer {
