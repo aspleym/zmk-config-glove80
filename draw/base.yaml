@@ -53,7 +53,7 @@ layers:
     - C
     - D
     - V
-    - {t: Esc, h: symbol}
+    - Ctrl
     - Alt
     - {t: '&ld', h: special}
     - Gui
@@ -71,7 +71,7 @@ layers:
     - {t: '[', right: '{'}
     - {t: ']', right: '}'}
     - {t: BACKSPACE, s: DELETE}
-    - Ctrl
+    - {t: Esc, h: symbol}
     - {t: Shift, h: sticky, s: Caps Word}
     - Alt
     - Enter
@@ -298,7 +298,7 @@ layers:
     - F
     - ''
     - ''
-    - {t: default, h: toggle}
+    - {t: exp, h: toggle}
     - ''
     - ''
     - Tab
@@ -377,25 +377,25 @@ layers:
     - ''
     - ''
     - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
     - {type: held}
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
     - ''
     - ''
     - ''
@@ -486,87 +486,87 @@ layers:
     - {type: trans}
     - {type: trans}
     - {type: trans}
-  free6:
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
+  exp:
+    - {t: '1', s: F1}
+    - {t: '2', s: F2}
+    - {t: '3', s: F3}
+    - {t: '4', s: F4}
+    - {t: '5', s: F5}
+    - {t: '6', s: F6}
+    - {t: '7', s: F7}
+    - {t: '8', s: F8}
+    - {t: '9', s: F9}
+    - {t: '0', s: F10}
+    - {t: $, s: '`'}
+    - +
+    - {t: '[', right: '{'}
+    - '{'
+    - (
+    - {t: '&', s: '|'}
+    - '='
+    - )
+    - '}'
+    - {t: ']', right: '}'}
+    - {t: '*', s: \}
+    - '!'
+    - Tab
+    - Q
+    - W
+    - F
+    - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+    - ;
+    - '-'
+    - Esc
+    - {t: A, h: Gui}
+    - {t: R, h: Alt}
+    - {t: S, h: Ctrl}
+    - {t: T, h: Shift}
+    - G
+    - M
+    - {t: N, h: Shift}
+    - {t: E, h: Ctrl}
+    - {t: I, h: Alt}
+    - {t: O, h: Gui}
+    - ''''
+    - '`'
+    - Z
+    - X
+    - C
+    - D
+    - V
+    - {t: Shift, h: sticky, s: Caps Word}
+    - Ctrl
+    - {t: default, h: toggle}
+    - Gui
+    - Ctrl
+    - Tab
+    - K
+    - H
+    - ','
+    - .
+    - /
+    - {t: PgUp, s: F11}
+    - {t: '&rgb_ug_status_macro', h: magic}
+    - Home
+    - End
+    - {t: '[', right: '{'}
+    - {t: ']', right: '}'}
+    - {t: BACKSPACE, s: DELETE}
+    - {t: Esc, h: symbol}
+    - Alt
+    - Alt
+    - Enter
+    - Spc
+    - ←
+    - ↓
+    - ↑
+    - →
+    - {t: PgDn, s: F12}
   free7:
     - {type: trans}
     - {type: trans}
