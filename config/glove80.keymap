@@ -11,8 +11,8 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #include "keys_nb.h"
-#include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/glove80.h"
+#include "zmk-helpers/include/zmk-helpers/helper.h"
+#include "zmk-helpers/include/zmk-helpers/key-labels/glove80.h"
 
 #define HYPER LC(LS(LG(LALT)))
 

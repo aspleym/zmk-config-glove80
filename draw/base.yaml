@@ -36,22 +36,22 @@ layers:
     - ;
     - \
     - '='
-    - {t: A, h: Gui}
-    - {t: R, h: Alt}
-    - {t: S, h: Ctrl}
-    - {t: T, h: Shift}
+    - A
+    - R
+    - S
+    - T
     - G
     - M
-    - {t: N, h: Shift}
-    - {t: E, h: Ctrl}
-    - {t: I, h: Alt}
-    - {t: O, h: Gui}
+    - N
+    - E
+    - I
+    - O
     - ''''
     - '`'
-    - Z
-    - X
-    - C
-    - D
+    - {t: Z, h: Gui}
+    - {t: X, h: Alt}
+    - {t: C, h: Ctrl}
+    - {t: D, h: Shift}
     - V
     - Ctrl
     - Alt
@@ -60,10 +60,10 @@ layers:
     - Ctrl
     - Tab
     - K
-    - H
-    - ','
-    - .
-    - /
+    - {t: H, h: Shift}
+    - {t: ',', h: Ctrl}
+    - {t: ., h: Alt}
+    - {t: /, h: Gui}
     - PgUp
     - {t: '&rgb_ug_status_macro', h: magic}
     - Home
@@ -313,8 +313,8 @@ layers:
     - Z
     - X
     - C
+    - Spc
     - {t: BACKSPACE, s: DELETE}
-    - ''
     - ''
     - ''
     - Enter
